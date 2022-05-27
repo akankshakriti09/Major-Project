@@ -25,5 +25,6 @@ sequelize
   });
 
 db.student = require("./student.model")(sequelize, Sequelize);
+db.teacher = require("./teacher.model")(sequelize, Sequelize);
 
 module.exports = db;

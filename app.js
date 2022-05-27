@@ -8,9 +8,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = require("./models/index");
 // db.sequelize.sync({ force: true });
 
-const dummy = require("./routes/dummy_data");
-app.use("/api", dummy);
-
 const auth = require("./routes/auth.js")
 app.use("/auth", auth);
 
